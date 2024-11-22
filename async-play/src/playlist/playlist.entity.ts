@@ -8,7 +8,7 @@ export class playlist extends Document{
     title: string;
 
     @Prop({ type: Types.ObjectId , ref: 'User' , required:true})
-    onwer: Types.ObjectId;
+    owner: Types.ObjectId;
 
     @Prop({ type: [{ type: Types.ObjectId }] , ref: 'Video' })
     viedos: Types.ObjectId[];
