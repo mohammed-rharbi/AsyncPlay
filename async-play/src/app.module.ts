@@ -4,8 +4,6 @@ import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { UserModule } from './user/user.module';
-import { PlaylistService } from './playlist/playlist.service';
-import { PlaylistController } from './playlist/playlist.controller';
 import { PlaylistModule } from './playlist/playlist.module';
 
 @Module({
@@ -14,7 +12,7 @@ import { PlaylistModule } from './playlist/playlist.module';
              UserModule,
              PlaylistModule
   ],
-  controllers: [AppController, PlaylistController],
-  providers: [AppService, PlaylistService],
+  controllers: [AppController],
+  providers: [AppService],
 })
 export class AppModule {}
