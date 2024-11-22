@@ -11,7 +11,7 @@ export class createPlayListDTO {
 
     @IsString()
     @IsNotEmpty()
-    onwer: string;
+    owner: string;
 
 
 }
