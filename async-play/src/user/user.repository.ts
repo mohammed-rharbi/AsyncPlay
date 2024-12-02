@@ -16,6 +16,7 @@ export class userRepositorie{
         return user.save();
     }
 
+
     async getByEmail(email: string) : Promise<User>{
 
         return await this.userModel.findOne({email}).exec();
